@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>Nikhil Mohan | Quality Engineering Leader</title>
@@ -15,6 +14,8 @@ color:#1F2937;
 line-height:1.6;
 }
 
+/* HERO SECTION */
+
 header{
 background:#0F2A44;
 color:white;
@@ -23,8 +24,8 @@ text-align:center;
 }
 
 header img{
-width:140px;
-height:140px;
+width:150px;
+height:150px;
 border-radius:50%;
 border:4px solid #FF7A00;
 margin-bottom:20px;
@@ -42,6 +43,8 @@ background:#FF7A00;
 margin:20px auto;
 }
 
+/* GENERAL */
+
 section{
 padding:60px 20px;
 max-width:1000px;
@@ -54,33 +57,7 @@ margin-bottom:20px;
 text-align:center;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-border-top:4px solid #FF7A00;
-}
-
-.card img{
-width:100%;
-border-radius:8px;
-margin-bottom:10px;
-}
-
-.card a{
-color:#FF7A00;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* NUMBER ANIMATION */
+/* IMPACT NUMBERS */
 
 .numbers{
 background:white;
@@ -106,61 +83,88 @@ color:#0F2A44;
 font-weight:bold;
 }
 
-/* CAREER TIMELINE */
+/* CARDS */
 
-.timeline{
-position:relative;
-max-width:900px;
-margin:auto;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.timeline::after{
-content:'';
-position:absolute;
-width:4px;
-background:#FF7A00;
-top:0;
-bottom:0;
-left:50%;
-margin-left:-2px;
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+border-top:4px solid #FF7A00;
 }
 
-.timeline-item{
-padding:20px 40px;
-position:relative;
-background:inherit;
-width:50%;
+.card img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
 }
 
-.timeline-item.left{
-left:0;
+/* TIMELINE */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 0;
 }
 
-.timeline-item.right{
-left:50%;
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #FF7A00;
+  top: 0;
+  bottom: 0;
+  left: 50%;
 }
 
-.timeline-item::after{
-content:'';
-position:absolute;
-width:20px;
-height:20px;
-right:-10px;
-background:#FF7A00;
-border-radius:50%;
-top:30px;
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
 }
 
-.timeline-item.right::after{
-left:-10px;
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
 }
 
 .timeline-content{
 background:white;
 padding:20px;
-border-radius:8px;
+border-radius:10px;
 box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
+
+.timeline-item::after{
+content:'';
+position:absolute;
+width:16px;
+height:16px;
+background:#FF7A00;
+border-radius:50%;
+top:28px;
+}
+
+.timeline-item.left::after{
+right:-8px;
+}
+
+.timeline-item.right::after{
+left:-8px;
+}
+
+/* CONTACT */
 
 .contact-box{
 background:#0F2A44;
@@ -175,6 +179,8 @@ color:#FF7A00;
 text-decoration:none;
 }
 
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:30px;
@@ -188,7 +194,6 @@ color:white;
 
 <body>
 
-
 <header>
 
 <img src="your-photo.jpg">
@@ -199,12 +204,38 @@ color:white;
 
 <div class="highlight-bar"></div>
 
-<p>Leading QA for platforms serving millions of users</p>
+<p>
+Driving quality engineering for large-scale platforms reaching <b>65M+ concurrent users</b>.
+</p>
 
 </header>
 
 
+<section>
+
+<h2>About Me</h2>
+
+<p>
+
+I am a Quality Engineering leader with over 12 years of experience building and leading QA organizations across OTT, fintech and enterprise platforms.
+
+My expertise spans automation strategy, release governance, CI/CD quality gates and scaling QA teams for high traffic platforms. Currently I lead a 47-member QA organization supporting large scale OTT ecosystems.
+
+</p>
+
+<p>
+
+My focus is on transforming testing into a strategic engineering discipline by driving automation adoption, risk based testing and stronger quality governance.
+
+</p>
+
+</section>
+
+
+
 <section class="numbers">
+
+<h2>Impact</h2>
 
 <div class="numbers-container">
 
@@ -237,38 +268,32 @@ color:white;
 
 <div class="card">
 
-<img src="testing.jpg">
-
 <b>65M Concurrent Users</b>
 
 <p>
-Led QA readiness for live sports streaming events scaling to over 65 million concurrent users.
+Led QA readiness for major live sports streaming events scaling to over 65 million concurrent users.
 </p>
 
 </div>
 
 
 <div class="card">
-
-<img src="qa-leadership.jpg">
-
-<b>47 Member QA Team</b>
-
-<p>
-Leading a multi-platform QA organization across Web, Mobile and Smart TV ecosystems.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<img src="platform-release.jpg">
 
 <b>Hotstar → JioHotstar Rebrand</b>
 
 <p>
-Directed QA strategy and delivery for a large-scale platform rebranding launch.
+Directed QA strategy and validation for a large-scale OTT platform rebranding launch.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<b>Automation Strategy Leadership</b>
+
+<p>
+Defined automation strategies across web, mobile and smart TV ecosystems improving regression efficiency.
 </p>
 
 </div>
@@ -281,30 +306,81 @@ Directed QA strategy and delivery for a large-scale platform rebranding launch.
 
 <section>
 
-<h2>Career Journey</h2>
+<h2>Career & Leadership Journey</h2>
 
 <div class="timeline">
 
+
 <div class="timeline-item left">
+
 <div class="timeline-content">
-<h3>TATA AIG</h3>
-<p>QA for rule-engine based insurance claims platform.</p>
+
+<h3>Acharan Management Solutions</h3>
+
+<p>
+
+Co-Founder & CTO — Built a real-time venue discovery platform for events enabling venue booking and service discovery.
+
+</p>
+
 </div>
+
 </div>
+
+
 
 <div class="timeline-item right">
+
 <div class="timeline-content">
-<h3>Open Financial</h3>
-<p>Fintech QA leadership focusing on API validation and automation strategy.</p>
-</div>
+
+<h3>TATA AIG</h3>
+
+<p>
+
+QA for rule-engine based insurance claims platform.
+
+</p>
+
 </div>
 
+</div>
+
+
+
 <div class="timeline-item left">
+
 <div class="timeline-content">
+
+<h3>Open Financial</h3>
+
+<p>
+
+Fintech QA leadership focusing on API validation, automation strategy and secure integrations.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="timeline-item right">
+
+<div class="timeline-content">
+
 <h3>Moolya – JioHotstar</h3>
-<p>Leading a 47-member QA organization supporting large scale OTT platforms.</p>
+
+<p>
+
+Leading a 47-member QA organization supporting large scale OTT platforms and live streaming events.
+
+</p>
+
 </div>
+
 </div>
+
 
 </div>
 
@@ -320,12 +396,12 @@ Directed QA strategy and delivery for a large-scale platform rebranding launch.
 
 <div class="card">
 
-<img src="automation.jpg">
-
 <b>Improving Quality Through RCA Systems</b>
 
 <p>
-Implementing structured RCA reviews to reduce recurring defects.
+
+Introducing structured RCA reviews to reduce recurring defects and improve engineering quality.
+
 </p>
 
 <a href="PASTE_LINKEDIN_POST_LINK">Read on LinkedIn →</a>
@@ -334,13 +410,13 @@ Implementing structured RCA reviews to reduce recurring defects.
 
 
 <div class="card">
-
-<img src="automation-framework.jpg">
 
 <b>Automation Strategy for OTT Platforms</b>
 
 <p>
-Building automation strategies across Web, Mobile and Smart TV platforms.
+
+Thoughts on building automation strategies across web, mobile and smart TV ecosystems.
+
 </p>
 
 <a href="PASTE_LINKEDIN_POST_LINK">Read on LinkedIn →</a>
@@ -350,12 +426,12 @@ Building automation strategies across Web, Mobile and Smart TV platforms.
 
 <div class="card">
 
-<img src="performance-testing.jpg">
-
-<b>Testing High Traffic Streaming Events</b>
+<b>Handling High Traffic Streaming Events</b>
 
 <p>
-Lessons from validating systems scaling to tens of millions of concurrent users.
+
+Lessons from validating systems supporting tens of millions of concurrent users.
+
 </p>
 
 <a href="PASTE_LINKEDIN_POST_LINK">Read on LinkedIn →</a>
@@ -386,6 +462,7 @@ linkedin.com/in/nikhilm3107
 </div>
 
 </section>
+
 
 
 <footer>
